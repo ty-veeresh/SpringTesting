@@ -1,0 +1,29 @@
+package comm.tyss.junit.prg;
+
+import static org.junit.Assert.*;
+
+import org.junit.Test;
+import org.junit.jupiter.api.Assertions;
+
+public class DataBaseTest {
+
+	//@Test
+	public void testAdd() {
+		Database db=new Database();
+		int act=db.add();
+	assertEquals(1, act);
+	}
+
+	@Test
+	public void testDelete() {
+		Database db=new Database();
+		int act=db.delete();
+	assertEquals(1, act);
+	}
+	@Test
+	public void testselect() {
+		Database db=new Database();
+		
+	assertEquals(1,db.selectDataBase());
+	}
+}
